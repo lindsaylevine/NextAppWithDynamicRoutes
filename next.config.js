@@ -1,4 +1,9 @@
 
 module.exports = ({
-    target: 'serverless'
+    target: 'serverless',
+    i18n: {
+        locales: ['en', 'ar', 'N/A'],
+        defaultLocale: 'N/A',
+        localeDetection: false,
+    },
 });
