@@ -1,7 +1,5 @@
 import React from 'react'
 import {useRouter} from "next/router";
-import Link from "next/link";
-import Home from "../index";
 
 const Numbers = () => {
     const router = useRouter();
@@ -9,8 +7,6 @@ const Numbers = () => {
     const numbers = Array(3).fill(1).map(() => (Math.random()*100).toFixed(0));
 
     const goToNumber = number => {
-        console.log("WILL ROUTET TO NUMER");
-        // router.push(`/numbers/${number.toString()}`)
         router.push({ pathname: '/numbers/[id]', query: { id: number } });
     }
 
@@ -22,9 +18,7 @@ const Numbers = () => {
                     key={num}
                     onClick={() => { console.log("GO TO NUMBER EXECUTED: "); goToNumber(num); }}
                 >
-                    {/*<Link href={`/numbers/${num}`} locale={router.locale}>*/}
-                        Go To {num}
-                    {/*</Link>*/}
+                    Go to number {num}
                 </div>
             ))
             }
@@ -32,9 +26,6 @@ const Numbers = () => {
     )
 };
 
-Numbers.getInitialProps = () => {
-    console.log("HOME INITIAL PROPS");
-};
 
 export default Numbers;
 

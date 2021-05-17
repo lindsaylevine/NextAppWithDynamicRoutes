@@ -3,7 +3,6 @@ import {useRouter} from "next/router";
 const NumberComponent = (props) => {
     const router =  useRouter();
     const {name} = props;
-    console.log({props});
     const num = router.query.id;
     return (
         <div>

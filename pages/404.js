@@ -1,10 +1,9 @@
 const Custom404 = () => {
   return (
       <div>
-          <h1>ERROR PAGE</h1>
+          <h1>Custom 404 Page</h1>
       </div>
   )
 };
-
 
 export default Custom404;
