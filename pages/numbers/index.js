@@ -1,6 +1,7 @@
 import React from 'react'
 import {useRouter} from "next/router";
 import Link from "next/link";
+import Home from "../index";
 
 const Numbers = () => {
     const router = useRouter();
@@ -31,4 +32,11 @@ const Numbers = () => {
     )
 };
 
+Numbers.getInitialProps = () => {
+    console.log("HOME INITIAL PROPS");
+};
+
 export default Numbers;
+
+
+

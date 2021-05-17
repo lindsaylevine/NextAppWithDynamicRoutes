@@ -6,7 +6,6 @@ export default function Home() {
 
     const router = useRouter();
 
-
     return (
     <div>
       <h2>Hey</h2>
@@ -16,4 +15,9 @@ export default function Home() {
         {/*<Link href={'/numbers'}></Link>*/}
     </div>
   )
+}
+
+
+Home.getInitialProps = () => {
+    console.log("HOME INITIAL PROPS");
 }
