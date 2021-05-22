@@ -5,6 +5,4 @@ function MyApp({ Component, pageProps }) {
 }
 
 
-MyApp.getInitialProps = () => ({pageProps: {name: 'Doaa', locale: 'en'}});
-
 export default MyApp
